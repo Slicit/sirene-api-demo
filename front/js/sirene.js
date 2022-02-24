@@ -23,7 +23,6 @@ $(document).ready(() => {
 
         goToPage(page) {
             page = parseInt(page);
-            console.log('goToPage', this.lastFulltext);
             this.search(this.lastFulltext, page);
         }
 
@@ -35,7 +34,6 @@ $(document).ready(() => {
          */
         search (fulltext, page, perPage) {
             this.lastFulltext = fulltext;
-            console.log('search', this.lastFulltext);
             collection.show();
             etablissement.hide();
 
