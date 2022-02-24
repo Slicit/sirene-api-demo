@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <title>SIRENE API</title>
+    <link rel="stylesheet"
+          href="css/bootstrap.min.css"/>
+    <link rel="stylesheet"
+          href="css/cute-alert.css"/>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.ba-throttle-debounce.js"></script>
+    <script src="js/cute-alert.js"></script>
+</head>
+<html lang="en">
+<body>
+
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand"
+           href="#">
+            <img src="assets/siren-logo.png"
+                 alt="Siren logo"/>
+        </a>
+
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link action-home"
+                       href="#">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <!-- Search is global -->
+    <div class="margin-search input-group mb-3">
+        <input type="text"
+               class="form-control input-search"
+               placeholder="SIRET, SIREN, Name, etc..."
+               aria-label="Recipient's username"
+               aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary"
+                    type="button">Search</button>
+        </div>
+    </div>
+
+
+    <!-- Dynamic tab search -->
+    <div id="page-search">
+        <table class="table table-striped"
+               id="collection">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="paginator"
+             class="btn-toolbar"
+             role="toolbar">
+        </div>
+    </div>
+
+    <!-- Dynamic tab show -->
+    <div id="page-show">
+        <table class="table table-striped"
+               style="display: none;"
+               id="etablissement">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</main>
+
+<script type="application/javascript"
+        src="js/sirene.js"></script>
+<link rel="stylesheet"
+      href="css/sirene.css"/>
+</body>
+</html>
+
+

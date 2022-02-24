@@ -1,0 +1,11 @@
+.navbar .navbar-brand img {
+    width: 200px;
+}
+
+.margin-search {
+    margin: 20px 0;
+}
+
+#paginator.btn-toolbar {
+    justify-content: flex-end !important;
+}
